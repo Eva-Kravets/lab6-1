@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Необходимые мета-теги -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <title>Сеть Интернет и протоколы</title>
+</head>
+
+<body>
+  <div class="container" style="height: 2000px;">
+    <div class="header d-flex justify-content-between mt-1">
+      <!-- Навигационное меню -->
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#internet">Интернет</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#protocols">Протоколы</a>
+        </li>
+      </ul>
+      <!-- Кнопки вызова модальных окон с регистрацией или входом -->
+      <div class="header__buttons">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login">
+          Вход
+        </button>
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#register">
+          Регистрация
+        </button>
+      </div>
+    </div>
+    <main class="main pt-5 pl-3">
+      <h2 class="bd-title mb-5">Сеть Интернет и протоколы</h2>
+      <h4>
+        Что такое интернет?
+        <a name="internet"></a>
+      </h4>
+      <p>
+        Интерне́т (англ. Internet, МФА: [ˈɪn.tə.net]) — всемирная система объединённых компьютерных сетей для хранения и
+        передачи информации[1].
+      </p>
+      <p>
+        Часто упоминается как Всемирная сеть и Глобальная сеть, а также просто Сеть. Построена на базе стека протоколов
+        TCP/IP[2]. На основе Интернета работает Всемирная паутина (World Wide Web, WWW) и множество других систем
+        передачи
+        данных. К середине 2015 года число пользователей достигло 3,3 млрд человек. Во многом это было обусловлено
+        широким
+        распространением сотовых сетей с доступом в Интернет стандартов 3G и 4G, развитием социальных сетей и
+        удешевлением
+        стоимости интернет-трафика[3].
+      </p>
+
+      <h4>
+        Протоколы передачи данных
+        <a name="protocols"></a>
+      </h4>
+      <p>
+        Протокол передачи данных — набор соглашений интерфейса логического уровня, которые определяют обмен данными
+        между
+        различными программами. Эти соглашения задают единообразный способ передачи сообщений и обработки ошибок.
+        Сигнальный протокол используется для управления соединением — например, установки, переадресации, разрыва связи.
+        Примеры протоколов: RTSP, SIP. Для передачи данных используются такие протоколы как RTP.</p>
+      <p>
+        Сетево́й протоко́л — набор правил и действий (очерёдности действий), позволяющий осуществлять соединение и обмен
+        данными между двумя и более включёнными в сеть устройствами.</p>
+      <p>
+        Разные протоколы зачастую описывают лишь разные стороны одного типа связи. Названия «протокол» и «стек
+        протоколов»
+        также указывают на программное обеспечение, которым реализуется протокол.</p>
+      <p>
+        Новые протоколы для Интернета определяются IETF, а прочие протоколы — IEEE или ISO. ITU-T занимается
+        телекоммуникационными протоколами и форматами.</p>
+      <p>
+        Наиболее распространённой системой классификации сетевых протоколов является так называемая модель OSI, в
+        соответствии с которой протоколы делятся на 7 уровней по своему назначению — от физического (формирование и
+        распознавание электрических или других сигналов) до прикладного (интерфейс программирования приложений для
+        передачи информации приложениями).</p>
+      <p>
+        Сетевые протоколы предписывают правила работы компьютерам, которые подключены к сети. Они строятся по
+        многоуровневому принципу. Протокол некоторого уровня определяет одно из технических правил связи. В настоящее
+        время для сетевых протоколов используется сетевая модель OSI (Open System Interconnection — взаимодействие
+        открытых систем, ВОС).</p>
+      <p>
+        Модель OSI — 7-уровневая логическая модель работы сети. Реализуется группой протоколов и правил связи,
+        организованных в несколько уровней:</p>
+
+        <!-- Таблица с уровнями OSI -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Уровень</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>На физическом уровне определяются физические (механические, электрические, оптические) характеристики
+              линий
+              связи
+            </td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>На канальном уровне определяются правила использования физического уровня узлами сети
+            </td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Сетевой уровень отвечает за адресацию и доставку сообщений
+            </td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>Транспортный уровень контролирует очередность прохождения компонентов сообщения
+            </td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td>
+              Сеансовый уровень координирует связь между двумя прикладными программами, работающими на разных рабочих
+              станциях
+            </td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>
+              Уровень представления служит для преобразования данных из внутреннего формата компьютера в формат передачи
+            </td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td>
+              Прикладной уровень является пограничным между прикладной программой и другими уровнями, обеспечивая
+              удобный интерфейс связи для сетевых программ пользователя.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Слайдер -->
+      <div class="slider-container m-5">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner p-1">
+            <div class="carousel-item active">
+              <figure class="w-100 d-flex justify-content-center">
+                <img src="./images/image1.png" class="d-block w-50" alt="OSI">
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure class="w-100 d-flex justify-content-center">
+                <img src="./images/image2.png" class="d-block w-50" alt="image2">
+              </figure>
+            </div>
+          </div>
+          <a class="carousel-control-prev bg-dark" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next bg-dark" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <p>Уровни, интерфейсы и протоколы модели OSI
+        прикладной уровень является пограничным между прикладной программой и другими уровнями, обеспечивая удобный
+        интерфейс связи для сетевых программ пользователя.</p>
+
+      <p>В общей классификации протоколы делятся на низкоуровневые, протоколы верхнего уровня и протоколы промежуточного
+        уровня. К промежуточному уровню относятся коммуникационные и протоколы аутентификации. Протоколами верхнего
+        уровня
+        являются прикладные, сеансовые протоколы и протоколы представления. Физический, канальный, сетевой и
+        транспортный
+        протоколы относят к низкоуровневым протоколам.</p>
+
+      <p>Другая модель — стек протоколов TCP/IP — содержит 4 уровня:</p>
+
+      <ul>
+        <li>канальный уровень (link layer),</li>
+        <li>сетевой уровень (Internet layer),</li>
+        <li>транспортный уровень (transport layer),</li>
+        <li>прикладной уровень (application layer)</li>
+      </ul>
+
+    </main>
+  </div>
+
+  <!-- Модальное окно входа в аккаунт -->
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginLable">Вход в аккаунт</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="loginEmail1">Email</label>
+              <input type="email" class="form-control" id="loginEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="loginPassword1">Пароль</label>
+              <input type="password" class="form-control" id="loginPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="loginCheck1">
+              <label class="form-check-label" for="loginCheck1">Запомнить меня</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          <button form="loginForm" type="submit" class="btn btn-primary">Войти</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно регистрации -->
+  <div class="modal fade" id="register" tabindex="-2" aria-labelledby="registerLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerLable">Регистрация</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="registerForm">
+            <div class="form-group">
+              <label for="registerEmail">Email</label>
+              <input type="email" class="form-control" id="registerEmail" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="registerPassword1">Пароль</label>
+              <input type="password" class="form-control" id="registerPassword1">
+            </div>
+            <div class="form-group">
+              <label for="registerPassword2">Повторите Пароль</label>
+              <input type="password" class="form-control" id="registerPassword2">
+            </div>
+            <div class="form-group">
+              <label for="registerChoose">Кем вы являетесь?</label>
+              <select class="form-control" id='registerChoose'>
+                <option value="student" selected>Я студент</option>
+                <option value="teacher">Я преподаватель</option>
+                <option value="teacher">Я работаю в IT сфере</option>
+              </select>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="mailingList" checked>
+              <label class="form-check-label" for="mailingList">Я хочу получать почтовую рассылку</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          <button form="registerForm" type="submit" class="btn btn-primary">Создать аккаунт</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Скрипты для Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
