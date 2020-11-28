@@ -45,7 +45,7 @@
         Интерне́т (англ. Internet, МФА: [ˈɪn.tə.net]) — всемирная система объединённых компьютерных сетей для хранения и
         передачи информации[1].
       </p>
-      <p>
+      <p class="text-justify">
         Часто упоминается как Всемирная сеть и Глобальная сеть, а также просто Сеть. Построена на базе стека протоколов
         TCP/IP[2]. На основе Интернета работает Всемирная паутина (World Wide Web, WWW) и множество других систем
         передачи
@@ -60,113 +60,118 @@
         Протоколы передачи данных
         <a name="protocols"></a>
       </h4>
-      <p>
+      <p class="text-justify">
         Протокол передачи данных — набор соглашений интерфейса логического уровня, которые определяют обмен данными
         между
         различными программами. Эти соглашения задают единообразный способ передачи сообщений и обработки ошибок.
         Сигнальный протокол используется для управления соединением — например, установки, переадресации, разрыва связи.
         Примеры протоколов: RTSP, SIP. Для передачи данных используются такие протоколы как RTP.</p>
-      <p>
+      <p class="text-justify">
         Сетево́й протоко́л — набор правил и действий (очерёдности действий), позволяющий осуществлять соединение и обмен
         данными между двумя и более включёнными в сеть устройствами.</p>
-      <p>
+      <p class="text-justify">
         Разные протоколы зачастую описывают лишь разные стороны одного типа связи. Названия «протокол» и «стек
         протоколов»
         также указывают на программное обеспечение, которым реализуется протокол.</p>
-      <p>
+      <p class="text-justify">
         Новые протоколы для Интернета определяются IETF, а прочие протоколы — IEEE или ISO. ITU-T занимается
         телекоммуникационными протоколами и форматами.</p>
-      <p>
+      <p class="text-justify">
         Наиболее распространённой системой классификации сетевых протоколов является так называемая модель OSI, в
         соответствии с которой протоколы делятся на 7 уровней по своему назначению — от физического (формирование и
         распознавание электрических или других сигналов) до прикладного (интерфейс программирования приложений для
         передачи информации приложениями).</p>
-      <p>
+      <p class="text-justify">
         Сетевые протоколы предписывают правила работы компьютерам, которые подключены к сети. Они строятся по
         многоуровневому принципу. Протокол некоторого уровня определяет одно из технических правил связи. В настоящее
         время для сетевых протоколов используется сетевая модель OSI (Open System Interconnection — взаимодействие
         открытых систем, ВОС).</p>
-      <p>
+      <p class="text-justify">
         Модель OSI — 7-уровневая логическая модель работы сети. Реализуется группой протоколов и правил связи,
         организованных в несколько уровней:</p>
 
-        <!-- Таблица с уровнями OSI -->
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Уровень</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <td>На физическом уровне определяются физические (механические, электрические, оптические) характеристики
-              линий
-              связи
-            </td>
-          </tr>
-          <tr>
-            <th>2</th>
-            <td>На канальном уровне определяются правила использования физического уровня узлами сети
-            </td>
-          </tr>
-          <tr>
-            <th>3</th>
-            <td>Сетевой уровень отвечает за адресацию и доставку сообщений
-            </td>
-          </tr>
-          <tr>
-            <th>4</th>
-            <td>Транспортный уровень контролирует очередность прохождения компонентов сообщения
-            </td>
-          </tr>
-          <tr>
-            <th>5</th>
-            <td>
-              Сеансовый уровень координирует связь между двумя прикладными программами, работающими на разных рабочих
-              станциях
-            </td>
-          </tr>
-          <tr>
-            <th>6</th>
-            <td>
-              Уровень представления служит для преобразования данных из внутреннего формата компьютера в формат передачи
-            </td>
-          </tr>
-          <tr>
-            <th>7</th>
-            <td>
-              Прикладной уровень является пограничным между прикладной программой и другими уровнями, обеспечивая
-              удобный интерфейс связи для сетевых программ пользователя.
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- Таблица с уровнями OSI -->
+      <div class="d-flex justify-content-center">
+        <table class="table col-xl-8 col-md-10 col-sm-12">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Уровень</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>На физическом уровне определяются физические (механические, электрические, оптические) характеристики
+                линий
+                связи
+              </td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>На канальном уровне определяются правила использования физического уровня узлами сети
+              </td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Сетевой уровень отвечает за адресацию и доставку сообщений
+              </td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td>Транспортный уровень контролирует очередность прохождения компонентов сообщения
+              </td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td>
+                Сеансовый уровень координирует связь между двумя прикладными программами, работающими на разных рабочих
+                станциях
+              </td>
+            </tr>
+            <tr>
+              <th>6</th>
+              <td>
+                Уровень представления служит для преобразования данных из внутреннего формата компьютера в формат
+                передачи
+              </td>
+            </tr>
+            <tr>
+              <th>7</th>
+              <td>
+                Прикладной уровень является пограничным между прикладной программой и другими уровнями, обеспечивая
+                удобный интерфейс связи для сетевых программ пользователя.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <!-- Слайдер -->
-      <div class="slider-container m-5">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner p-1">
-            <div class="carousel-item active">
-              <figure class="w-100 d-flex justify-content-center">
-                <img src="./images/image1.png" class="d-block w-50" alt="OSI">
-              </figure>
+      <div class="d-flex justify-content-center">
+        <div class="slider-container col-xl-8 col-md-10 col-sm-12">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner p-1">
+              <div class="carousel-item active">
+                <figure class="w-100 d-flex justify-content-center">
+                  <img src="./images/image1.png" class="d-block w-50" alt="OSI">
+                </figure>
+              </div>
+              <div class="carousel-item">
+                <figure class="w-100 d-flex justify-content-center">
+                  <img src="./images/image2.png" class="d-block w-50" alt="image2">
+                </figure>
+              </div>
             </div>
-            <div class="carousel-item">
-              <figure class="w-100 d-flex justify-content-center">
-                <img src="./images/image2.png" class="d-block w-50" alt="image2">
-              </figure>
-            </div>
+            <a class="carousel-control-prev bg-dark" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next bg-dark" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <a class="carousel-control-prev bg-dark" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next bg-dark" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
       </div>
 
